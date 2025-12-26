@@ -1,0 +1,144 @@
+:root {
+  --accent: #00c6ff;
+  --bg-overlay: linear-gradient(
+    to bottom,
+    rgba(0, 30, 60, 0.6),
+    rgba(0, 10, 30, 0.8)
+  );
+  --text-main: #ffffff;
+  --text-muted: #d0e6f7;
+  --glass-bg: rgba(255, 255, 255, 0.25);
+}
+
+/* ====== GLOBAL RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('./bg.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.app-wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-overlay);
+  transition: background 0.6s ease;
+}
+
+/* ====== HEADER ====== */
+header {
+  display: flex;
+  justify-content: center;
+  padding: 50px 15px 15px;
+}
+
+header input {
+  width: 100%;
+  max-width: 280px;
+  padding: 10px 15px;
+  background: var(--glass-bg);
+  border: none;
+  border-bottom: 3px solid var(--accent);
+  border-radius: 0 16px 0 16px;
+  outline: none;
+  font-size: 20px;
+  color: #003049;
+}
+
+/* ====== MAIN ====== */
+main {
+  flex: 1;
+  padding: 25px;
+  text-align: center;
+}
+
+.location .city {
+  font-size: 32px;
+  color: var(--text-main);
+}
+
+.location .date {
+  color: var(--text-muted);
+}
+
+.current .temp {
+  font-size: 102px;
+  font-weight: 900;
+  margin: 30px 0;
+  color: var(--accent);
+  text-shadow: 2px 10px 10px rgba(0, 0, 0, 0.6);
+}
+
+.current .weather {
+  font-size: 32px;
+  font-style: italic;
+  color: var(--text-main);
+}
+
+.current .hi-low {
+  font-size: 24px;
+  color: var(--text-muted);
+}
+
+/* ====== THEMES ====== */
+/*WORLD METEOROLOGICAL ORGANIZATION*/
+/* COLD */
+.theme-cold {
+  --accent: #00FFFF; /* bright cyan */
+  --bg-overlay: linear-gradient(
+    to bottom,
+    rgba(0, 255, 255, 0.7),   /* bright cyan at top */
+    rgba(0, 180, 180, 0.85)   /* darker cyan at bottom */
+  );
+}
+
+
+/* MILD */
+.theme-mild {
+  --accent: #00FF00; /* bright green */
+  --bg-overlay: linear-gradient(
+    to bottom,
+    rgba(0, 255, 0, 0.6),   /* lighter green at top */
+    rgba(0, 180, 0, 0.8)    /* darker green at bottom */
+  );
+}
+
+
+/* HOT */
+.theme-hot {
+  --accent: #FFFF00; /* bright yellow */
+  --bg-overlay: linear-gradient(
+    to bottom,
+    rgba(255, 255, 0, 0.6),   /* lighter yellow at top */
+    rgba(180, 180, 0, 0.8)    /* darker yellow at bottom */
+  );
+}
+
+.theme-v-hot {
+  background-color: #FF8C00;
+  color: white; /* keeps text readable */
+}
+.theme-very-hot {
+  background-color: #FF4500; /* orange-red */
+  color: white; /* keeps text readable */
+}
+.theme-ex-hot {
+  background-color: #FF0000; /* orange-red */
+  color: white; /* keeps text readable */
+}
+.theme-vx-hot {
+  background-color: #800000; /* orange-red */
+  color: white; /* keeps text readable */
+}
+.theme-horhot {
+  background-color: #FF00FF; /* orange-red */
+  color: white; /* keeps text readable */
+}
