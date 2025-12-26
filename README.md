@@ -1,22 +1,57 @@
-# Weather App
+# 🌦️ Dynamic Weather App
 
-A dynamic weather application that displays real-time weather information based on city search.
+A responsive and interactive weather application that provides real-time weather information based on city search, with dynamic UI themes that visually adapt to temperature changes.
 
-## Features
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Netlify-brightgreen)](https://swathy-weather-app.netlify.app)
+
+---
+
+## 🚀 Live Demo
+🔗 https://swathy-weather-app.netlify.app
+
+---
+
+## ✨ Features
 - Search weather by city name
-- Displays temperature, min/max values, and conditions
-- Dynamic theme changes based on temperature
-- Shows city, country, and current date
+- Displays city, country, and current date
+- Shows current temperature with minimum and maximum values
+- Real-time weather conditions
+- Dynamic color themes based on temperature (cold, mild, hot)
+- Clean, responsive, and user-friendly interface
 
-## Tech Stack
-- HTML
-- CSS
-- JavaScript
-- OpenWeather API
+---
 
-## How to Run
-1. Download or clone the repository
+## 🛠️ Tech Stack
+- **HTML5**
+- **CSS3**
+- **JavaScript (ES6)**
+- **OpenWeather API**
+- **Netlify** (Deployment)
+
+---
+
+## 📂 Project Structure
+weather-app/
+│── index.html
+│── style.css
+│── script.js
+└── README.md
+
+
+---
+
+## ▶️ How to Run Locally
+1. Clone the repository
 2. Open `index.html` in your browser
 
-## Author
-Swathi
+---
+
+## 📌 Deployment
+This project is deployed using **Netlify** with continuous deployment support.
+
+---
+
+## 👩‍💻 Author
+**Swathy**  
+B.Tech Computer Science Engineering Student  
+
