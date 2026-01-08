@@ -46,11 +46,11 @@ function applyTheme(temp) {
   app.classList.remove('theme-cold', 'theme-mild', 'theme-hot', 'theme-very-hot');
 
   if (temp <= 10) {
-    app.classList.add('theme-cold');      // Cold: ≤10°C
+    app.classList.add('theme-cold');      
   } else if (temp <= 20) {
-    app.classList.add('theme-mild');      // Mild: 11–25°C
+    app.classList.add('theme-mild');     
   } else if (temp <= 25) {
-    app.classList.add('theme-hot');       // Hot: 26–35°C
+    app.classList.add('theme-hot');       
   } else if (temp <= 30) {
     app.classList.add('theme-v-hot');}
     else if (temp <= 35) {
@@ -77,3 +77,4 @@ function dateBuilder(d) {
 
   return `${days[d.getDay()]} ${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`;
 }
+
